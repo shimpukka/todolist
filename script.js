@@ -12,8 +12,9 @@ function createListElement() {
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value+" "));
 	var btn = document.createElement("button");
-	btn.appendChild(document.createTextNode("delete"));
-	btn.classList.add("btn-default");
+	btn.appendChild(document.createTextNode("x"));
+	btn.classList.add("btn-danger");
+	btn.classList.add("btn-sm");
 	li.appendChild(btn);
 	ul.appendChild(li);
 	
